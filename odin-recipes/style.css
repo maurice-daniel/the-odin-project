@@ -1,6 +1,4 @@
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -20,33 +18,28 @@ li {
 
 a, a:visited {
   color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: orange;
 }
 
 nav {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid rgb(0, 0, 0, 0.1);
-  padding: 1rem 0.5rem 1rem;
-  box-shadow:
-    0 1px 3px 0 rgb(0 0 0 / 0.1),
-    0 1px 2px -1px rgb(0 0 0 / 0.1);
-    z-index: 10;
+  width: 100%;
+  padding: 1rem 0.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  z-index: 10;
 }
 
 nav ul {
   display: flex;
   gap: 1rem;
   align-items: center;
-}
-
-nav a, a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  color: orange;
 }
 
 .wrapper {
@@ -58,14 +51,14 @@ a:hover {
 }
 
 main {
-  flex-grow: 1; 
   display: flex;
   flex-direction: column;
   width: 100%;
   max-width: 1200px;
-  border-left: 1px solid rgb(0, 0, 0, 0.1);
-  border-right: 1px solid rgb(0, 0, 0, 0.1);
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
   padding: 2rem;
+  flex-grow: 1;
 }
 
 .hero {
@@ -76,8 +69,7 @@ main {
 }
 
 .hero-image {
-  margin-top: 0.5rem;
-  background: rgb(222, 222, 222, 0.6);
+  background: rgba(222, 222, 222, 0.6);
   height: 400px;
   width: 550px;
   border-radius: 10px;
@@ -87,15 +79,14 @@ main {
 }
 
 .hero-button {
-  padding: 0.5rem 1rem 0.5rem;
-  border: 1px solid rgb(0 0 0 / 0.1);
+  padding: 0.5rem 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   margin-top: 0.7rem;
 }
 
-
 .hero-button:hover {
-  background: rgb(222, 222, 222, 1);
+  background: rgba(222, 222, 222, 1);
 }
 
 section {
@@ -107,9 +98,9 @@ section {
 }
 
 .favorite {
+  background: rgba(222, 222, 222, 0.6);
   height: 300px;
   width: 100%;
-  background: rgb(222, 222, 222, 0.6);
   border-radius: 7px;
   margin-bottom: 1rem;
 }
@@ -122,19 +113,56 @@ section {
   text-align: justify;
 }
 
-.about-section {
-  max-width: 900px;
+.about-section, .recipe-section {
+  max-width: 1000px;
   margin: 0 auto;
   padding: 2rem;
   text-align: justify;
 }
 
-.about-section h1, .about-section h2 {
+.about-section h1, .about-section h2,
+.recipe-section h1, .recipe-section h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
 
-.about-section p {
+.about-section p, .recipe-section p {
   margin-bottom: 1rem;
   line-height: 1.5;
+}
+
+.recipe-image {
+  background: rgba(222, 222, 222, 0.6);
+  height: 400px;
+  width: 100%;
+  border-radius: 10px;
+  flex-shrink: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1, h2, h3 {
+  margin-top: 2rem;
+}
+
+li > p {
+  text-align: justify;
+}
+
+.recipe-steps {
+  margin-top: 0.5rem;
+}
+
+.recipe-ingredient {
+  column-count: 3;
+  column-gap: 2rem;
+  column-rule-style: solid;
+  border-left: 3px solid black;
+  padding-left: 1rem;
+}
+
+
+.recipe-steps {
+  max-width: 600;
+  margin: 0 auto;
 }
