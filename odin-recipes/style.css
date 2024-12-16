@@ -1,77 +1,118 @@
-/* Modern CSS Reset */
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-  margin: 0;
   padding: 0;
-  border: 0;
-}
-
-html {
-  -webkit-text-size-adjust: none; /* Prevent automatic font size adjustment on mobile */
-  text-size-adjust: none;
-  scrollbar-gutter: stable;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-  min-height: 100dvh; /* Use dynamic viewport height for better mobile support */
-  line-height: 1.5;
-  text-rendering: optimizeSpeed;
+  height: 100dvh;
+  width: 100%;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
 }
 
-/* Improve media defaults */
-img,
-picture,
-video,
-canvas,
-svg {
-  display: block;
-  max-width: 100%;
-  height: auto;
+li {
+  list-style-type: none;
 }
 
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-  font: inherit;
+a, a:visited {
+  color: black;
 }
 
-/* Remove list styles */
-ul,
-ol {
-  list-style: none;
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+  padding: 1rem 0.5rem 1rem;
+  box-shadow:
+    0 1px 3px 0 rgb(0 0 0 / 0.1),
+    0 1px 2px -1px rgb(0 0 0 / 0.1);
 }
 
-/* Remove default link styles */
-a {
-  color: inherit;
+nav ul {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+nav a, a:visited {
   text-decoration: none;
 }
 
-/* Remove animations for users who prefer reduced motion */
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
+nav a:hover {
+  color: orange;
 }
 
-/* Focus styles for accessibility */
-:focus-visible {
-  outline: 2px solid currentColor;
-  outline-offset: 2px;
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Remove default button styles */
-button {
-  background: none;
-  border: none;
-  cursor: pointer;
+main {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  border-left: 1px solid rgb(0, 0, 0, 0.1);
+  border-right: 1px solid rgb(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: justify;
+}
+
+.hero-image {
+  margin-top: 0.5rem;
+  background: rgb(222, 222, 222, 0.6);
+  height: 400px;
+  width: 550px;
+  border-radius: 10px;
+  flex-shrink: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-button {
+  padding: 0.5rem 1rem 0.5rem;
+  border: 1px solid rgb(0 0 0 / 0.1);
+  border-radius: 5px;
+  margin-top: 0.7rem;
+}
+
+
+.hero-button:hover {
+  background: rgb(222, 222, 222, 1);
+}
+
+section {
+  margin-bottom: 1.5rem;
+}
+
+.rate {
+  margin-bottom: 0.5rem;
+}
+
+.favorite {
+  height: 300px;
+  width: 100%;
+  background: rgb(222, 222, 222, 0.6);
+  border-radius: 7px;
+  margin-bottom: 1rem;
+}
+
+.favorite-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 0.5rem;
+  text-align: justify;
 }
