@@ -1,139 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Odin Recipes Cheesecakes</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link 
-        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" 
-        rel="stylesheet" 
-    />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Recipes - Cheesecake</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav>
-            <p><a href="./index.html">Odin Recipes</a></p>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./about.html">About</a></li>
-                <li><a href="./recipes.html">Recipes</a></li>
+            <ul class="nav-primary">
+                <li><a href="#" class="brand-logo">ODIN RECIPES.</a></li>
+                <li><a href="#">Cheesecake Menu</a></li>
+                <li><a href="#">Recipe Corner</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Order Now</a></li>
+                <li>
+                    <input type="search" class="search-input" placeholder="Search...">
+                </li>
+            </ul>
+            <ul class="nav-secondary">
+                <li><a href="#">Sign Up</a></li>
+                <li><a href="#">Log in</a></li>
+                <li><a href="#" class="member-cta">Become a Member</a></li>
             </ul>
         </nav>
+
+        <section class="page-hero">
+            <h1 class="hero-headline">ODIN RECIPES</h1>
+            <p class="hero-subtext">Your ultimate guide to the best cheesecake recipes.</p>
+        </section>
     </header>
 
-    <div class="wrapper">
-        <main>
-            <!-- Hero Section -->
-            <section class="hero">
-                <div>
-                    <div class="hero-image"></div>
-                </div>
-                <div class="hero-content">
-                    <h2>Blueberry Cheesecake</h2>
-                    <p class="rate">Rating: ★★★★☆</p>
-                    <p>
-                        <small>
-                            Blueberry cheesecake is a rich and creamy dessert that combines
-                            the tangy taste of fresh blueberries with the smooth texture of
-                            cheesecake. The blueberries are often used as a topping or
-                            incorporated into the cheesecake filling, adding a burst of
-                            flavor and a beautiful color contrast. Perfect for any occasion,
-                            this treat is sure to impress with its decadent and refreshing
-                            taste.
-                        </small>
-                    </p>
-                    <a href="./recipes/blueberry"><button class="hero-button">View Recipe</button></a>
-                </div>
-            </section>
+    <main>
+        <a href="./recipes/blueberry.html"><div class="hero-visual"></div></a>
+    </main>
 
-            <!-- Favorites Section -->
-            <section class="favorites">
-                <h2>All Time Favorites</h2>
-                <article class="favorite-grid">
-                    <!-- Favorite Item -->
-                    <div>
-                        <div class="favorite"></div>
-                        <p><a href="./recipes/classic.html">Classic Cheesecake</a></p>
-                        <p class="rate">Rating: ★★★★★</p>
-                        <p>
-                            <small>
-                                A rich and dense cheesecake with a smooth, creamy filling,
-                                typically made with cream cheese, eggs, sugar, and a graham
-                                cracker crust. It's often topped with a sour cream layer.
-                            </small>
-                        </p>
-                    </div>
-                    <!-- Favorite Item -->
-                    <div>
-                        <div class="favorite"></div>
-                        <p><a href="./recipes/strawberry.html">Strawberry Cheesecake</a></p>
-                        <p class="rate">Rating: ★★★☆☆</p>
-                        <p>
-                            <small>
-                                A classic cheesecake topped with fresh strawberry slices or a
-                                strawberry glaze, adding a sweet and fruity contrast to the
-                                creamy base.
-                            </small>
-                        </p>
-                    </div>
-                    <!-- Favorite Item -->
-                    <div>
-                        <div class="favorite"></div>
-                        <p><a href="./recipes/lemon.html">Lemon Cheesecake</a></p>
-                        <p class="rate">Rating: ★★★★★</p>
-                        <p>
-                            <small>
-                                A tangy, citrus-flavored cheesecake that often includes lemon
-                                zest and juice in the filling, creating a refreshing contrast
-                                to the creamy texture.
-                            </small>
-                        </p>
-                    </div>
-                    <!-- Favorite Item -->
-                    <div>
-                        <div class="favorite"></div>
-                        <p><a href="./recipes/chocolate.html">Chocolate Cheesecake</a></p>
-                        <p class="rate">Rating: ★★☆☆☆</p>
-                        <p>
-                            <small>
-                                A decadent variation of cheesecake with a chocolatey twist.
-                                The filling is often made with melted chocolate, giving it a
-                                rich, smooth texture.
-                            </small>
-                        </p>
-                    </div>
-                    <!-- Favorite Item -->
-                    <div>
-                        <div class="favorite"></div>
-                        <p><a href="./recipes/pumpkin.html">Pumpkin Cheesecake</a></p>
-                        <p class="rate">Rating: ★★★★☆</p>
-                        <p>
-                            <small>
-                                A seasonal favorite, especially popular in the fall. Made
-                                with pureed pumpkin and spices like cinnamon, nutmeg, and
-                                clove, this cheesecake is perfect for holiday celebrations.
-                            </small>
-                        </p>
-                    </div>
-                    <!-- Favorite Item -->
-                    <div>
-                        <div class="favorite"></div>
-                        <p><a href="./recipes/raspberry.html">Raspberry Cheesecake</a></p>
-                        <p class="rate">Rating: ★★★☆☆</p>
-                        <p>
-                            <small>
-                                A variation where the filling is enhanced with a layer of
-                                raspberry purée or topped with fresh raspberries, adding a
-                                sweet and tart flavor to the rich cheesecake.
-                            </small>
-                        </p>
-                    </div>
-                </article>
-            </section>
-        </main>
-    </div>
+    <section class="featured-collection">
+        <p class="section-title">All Time Favorites.</p>
+        <div class="feature-images">
+            <div class="feature-image" style="background-image: url('./images/classic.jpg');"></div>
+            <div class="feature-image" style="background-image: url('./images/lemon.jpg');"></div>
+            <div class="feature-image" style="background-image: url('./images/chocolate.jpg');"></div>
+            <div class="feature-image" style="background-image: url('./images/pistachio.jpg');"></div>
+            <div class="feature-image" style="background-image: url('./images/raspberry.jpg');"></div>
+            <div class="feature-image" style="background-image: url('./images/strawberry.jpg');"></div>
+        </div>
+    </section>
+
+    <footer>
+        <a href="#" class="brand-logo">ODIN RECIPES.</a>
+        <ul class="footer-links">
+            <li>Our Cheesecakes</li>
+            <li>Flavor Collections</li>
+            <li>Menu</li>
+            <li>Cheesecake Academy</li>
+            <li>Careers</li>
+            <li>Online Store</li>
+            <li>Cheesecake Directory</li>
+            <li>Events & Tastings</li>
+            <li>FAQs</li>
+            <li>About Us</li>
+            <li>Contact Us</li>
+        </ul>
+    </footer>
 </body>
 </html>
